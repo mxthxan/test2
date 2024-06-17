@@ -14,4 +14,14 @@ git add .
 git status
 git commit -m "any comment here in quotes"
 git remote add origin repo-url
-git push -u origin master-->
+git push -u origin master
+git pull origin main --rebase
+git push origin main
+echo "# test2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mxthxan/test2.git
+git push -u origin main
+-->
