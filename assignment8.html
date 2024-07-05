@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat bot</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/chatbg.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+        .chat-container {
+            width: 300px;
+            background: rgba(50, 63, 75, 0.9); /* Heading background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .chat-bubble {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .chat-bubble.user {
+            background: #47a3f3;
+            text-align: right;
+        }
+        .chat-bubble.bot {
+            background: #52606d;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-bubble bot">Hello M, how are you?</div>
+        <div class="chat-bubble user">Hi K, I am good. How about you?</div>
+        <div class="chat-bubble bot">I'm fine. I published my website recently</div>
+        <div class="chat-bubble user">Oh great K! Can you send me the URL?</div>
+        <div class="chat-bubble bot">https://varakumar.ccbp.tech</div>
+        <div class="chat-bubble user">Awesome K, where did you learn?</div>
+        <div class="chat-bubble bot">Revamp mern classes</div>
+    </div>
+</body>
+</html>
